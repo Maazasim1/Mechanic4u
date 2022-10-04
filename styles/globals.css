@@ -3,3 +3,5 @@
 @tailwind utilities;
 
 
+.parts>li:before { content: '🔧'; margin-left: -20px; margin-right: 10px; } 
+

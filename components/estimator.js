@@ -17,7 +17,7 @@ export default function Estimator() {
                     </h1>
                     <div className='flex'>
                         <select >
-                            <option value="" disabled="" selected="">Make</option>
+                            <option value="" disabled="" >Make</option>
                             <option value="233"  >Daihatsu</option>
                             <option value="235"  >Faw</option>
                             <option value="164"  >Honda</option>
@@ -30,7 +30,7 @@ export default function Estimator() {
                             <option value="209"  >Toyota</option>
                         </select>
                         <select>
-                        <option value="" disabled=""  selected="">Model</option>
+                        <option value="" disabled="" >Model</option>
                   <option value="96"  >4Runner</option>
                   <option value="100"  >A3 Quattro</option>
                   <option value="101"  >A3 Sportback e-tron</option>
