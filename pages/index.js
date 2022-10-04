@@ -97,7 +97,7 @@ export default function Home() {
               />
             </div>
             <h1 className='text-center font-Muli text-3xl p-4 text-gray-400'>3</h1>
-            <p className='text-center font-Muli'>WE'LL COME AT<br />YOUR DOOR STEP<br />FOR MAINTENANCE</p>
+            <p className='text-center font-Muli'>WE WILL COME AT<br />YOUR DOOR STEP<br />FOR MAINTENANCE</p>
           </div>
 
 
