@@ -82,9 +82,9 @@ export default function Herobanner() {
         </Swiper>
     
 </div>
-<div className=' absolute left-[50vw] bottom-32 animate-bounce z-10'>
+<div className=' absolute left-[50vw] bottom-32 animate-bounce z-10 rotate-180'>
 
-        <img alt="triangle to guide user to scroll down" className=' rotate-180'
+        <Image width={30} height={30} alt="triangle to guide user to scroll down" className=' rotate-180'
 
 src='/images/triangle.png'
 
