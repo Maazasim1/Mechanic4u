@@ -10,6 +10,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import Cards from '../components/cards'
 import ServiceCell from '../components/servicecell'
 import Reviews from '../components/reviews'
+import Footer from '../components/footer'
 
 export default function Home() {
   const serviceGrid = [
@@ -32,7 +33,6 @@ export default function Home() {
       <Upperbar />
       <Lowerbar />
       <Herobanner />
-      <Estimator />
       <div className='w-full'>
         <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
           WELCOME TO CAR MAINTENANCE SERVICES
@@ -253,6 +253,89 @@ export default function Home() {
 
       </div>
       <Reviews />
+      <div className='w-full'>
+        <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
+        We Maintain All Makes of Automobiles        </h1>
+        <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
+        <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
+        Some of the popular makers</p>
+      </div>
+      <div className='p-20 flex justify-evenly'>
+        <div className='shadow-2xl'>
+          <Image
+
+          src='/images/logo_1.webp'
+          height={120}
+          width={140}
+
+          />
+
+        </div>
+        <div className='shadow-2xl'>
+          <Image
+
+          src='/images/logo_2.webp'
+          height={120}
+          width={140}
+
+          />
+
+        </div>
+        <div className='shadow-2xl'>
+          <Image
+
+          src='/images/logo_3.webp'
+          height={120}
+          width={140}
+
+          />
+
+        </div>
+        <div className='shadow-2xl'>
+          <Image
+
+          src='/images/logo_4.webp'
+          height={120}
+          width={140}
+
+          />
+
+        </div>
+        <div className='shadow-2xl'>
+          <Image
+
+          src='/images/logo_5.webp'
+          height={120}
+          width={140}
+
+          />
+
+        </div>
+        <div className='shadow-2xl'>
+          <Image
+
+          src='/images/logo_6.webp'
+          height={120}
+          width={140}
+
+          />
+
+        </div>
+        <div className='shadow-2xl'>
+          <Image
+
+          src='/images/logo_7.webp'
+          height={120}
+          width={140}
+
+          />
+
+        </div>
+        
+
+      </div>
+      <Footer />
+
     </div>
   )
 }
