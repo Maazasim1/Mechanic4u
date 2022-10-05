@@ -7,8 +7,21 @@ import Herobanner from '../components/herobanner'
 import Estimator from '../components/estimator'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import Cards from '../components/cards'
+import ServiceCell from '../components/servicecell'
+import Reviews from '../components/reviews'
 
 export default function Home() {
+  const serviceGrid = [
+    { src: "/images/service-1.webp", name: "DIAGNOSTICS" },
+    { src: "/images/service-2.webp", name: "CATALYTIC CONVERTER CLEANING" },
+    { src: "/images/service-3.webp", name: "OIL, LUBE, FILTERS" },
+    { src: "/images/service-4.webp", name: "TRANSMISION" },
+    { src: "/images/service-5.webp", name: "BATTERIES" },
+    { src: "/images/service-6.webp", name: "TUNE UP" },
+  ]
+
+
   return (
     <div>
       <Head>
@@ -30,17 +43,17 @@ export default function Home() {
         </p>
         <div className='flex justify-around p-20 items-center space-x-6'>
           <div className='flex-shrink-0'>
-            <Image src='/images/image_1.webp' height={430} width={450} placeholder="blur" blurDataURL='/images/image_1/webp' />
+            <Image src='/images/image_1.webp' height={430} width={450} placeholder="blur" blurDataURL='/images/image_1.webp' />
 
           </div>
           <div className='w-full'>
             <p className='text-lg text-[#3a3a3a]'>
               Mechanic4u is a full-service preventive maintenance center. We perform high quality, guaranteed service you can trust at a fair price. We work on domestic and foreign vehicles and are your best choice for scheduled maintenance of your car, SUV, truck and fleet vehicles.
             </p>
-            <p className='py-5'>
+            <div className='py-5'>
               <div className='w-5 inline-block px-[2px] mx-2'>  <FontAwesomeIcon className='text-[1px] text-[#1d72b2]' icon={faCheck} /></div>Same day service is provided in many instances<br />
               <div className='w-5 inline-block px-[2px] mx-2'>  <FontAwesomeIcon className='text-[1px] text-[#1d72b2]' icon={faCheck} /></div>Our work is warrantied for a full year
-            </p>
+            </div>
             <button className='px-8 py-4 border-2 hover:bg-[#1d72b2] hover:text-white font-Muli border-[#1d72b2]'>+ MORE INFO</button>
           </div>
 
@@ -125,41 +138,121 @@ export default function Home() {
         <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
           Fixed price car servicing packages</p>
       </div>
-      <div className='flex flex-row justify-center'>
-        <div className='shadow-lg w-96'>
+      <div className='flex justify-evenly flex-row'>
+        <Cards name="SUPRA" price="6499">
+          <ul className="parts  space-y-2 p-10">
+            <li>Catalytic Cleaning by Machine</li>
+            <li>Brakes Service (RUST REMOVING &amp; GREASING)</li>
+            <li>Brake Pad Change if Required (PARTS WILL BE CHARGED SEPARATELY)</li>
+            <li>Throttle Body Cleaning</li>
+            <li>Air Intake Cleaning</li>
+            <li>MAP, MAF, TPS &amp; Oxygen Sensor Cleaning</li>
+            <li>Spark Plug Cleaning</li>
+            <li>Spark Coils Cleaning</li>
+            <li>Filters Cleaning</li>
+            <li>Computerized Scanning</li>
+            <li>Computerized Throttle Body Calibration</li>
+            <li>Complimentary Oil Change (OIL WILL BE CHARGED SEPARATELY) </li>
+            <li>Pre &amp; Post Inspection 🧐 </li>
+            <li>Complete Car Inspection By DAE Engineer Through Our Inspection Sheet</li>
+            <li>MECHANIC4U CERTIFICATION STICKER</li>
+          </ul>
+        </Cards>
+        <Cards name="SUPRA" price="6499">
+          <ul className="parts  space-y-2 p-10">
+            <li>Catalytic Cleaning by Machine</li>
+            <li>Brakes Service (RUST REMOVING &amp; GREASING)</li>
+            <li>Brake Pad Change if Required (PARTS WILL BE CHARGED SEPARATELY)</li>
+            <li>Throttle Body Cleaning</li>
+            <li>Air Intake Cleaning</li>
+            <li>MAP, MAF, TPS &amp; Oxygen Sensor Cleaning</li>
+            <li>Spark Plug Cleaning</li>
+            <li>Spark Coils Cleaning</li>
+            <li>Filters Cleaning</li>
+            <li>Computerized Scanning</li>
+            <li>Computerized Throttle Body Calibration</li>
+            <li>Complimentary Oil Change (OIL WILL BE CHARGED SEPARATELY) </li>
+            <li>Pre &amp; Post Inspection 🧐 </li>
+            <li>Complete Car Inspection By DAE Engineer Through Our Inspection Sheet</li>
+            <li>MECHANIC4U CERTIFICATION STICKER</li>
+          </ul>
+        </Cards>
+        <Cards name="SUPRA" price="6499">
+          <ul className="parts  space-y-2 p-10">
+            <li>Catalytic Cleaning by Machine</li>
+            <li>Brakes Service (RUST REMOVING &amp; GREASING)</li>
+            <li>Brake Pad Change if Required (PARTS WILL BE CHARGED SEPARATELY)</li>
+            <li>Throttle Body Cleaning</li>
+            <li>Air Intake Cleaning</li>
+            <li>MAP, MAF, TPS &amp; Oxygen Sensor Cleaning</li>
+            <li>Spark Plug Cleaning</li>
+            <li>Spark Coils Cleaning</li>
+            <li>Filters Cleaning</li>
+            <li>Computerized Scanning</li>
+            <li>Computerized Throttle Body Calibration</li>
+            <li>Complimentary Oil Change (OIL WILL BE CHARGED SEPARATELY) </li>
+            <li>Pre &amp; Post Inspection 🧐 </li>
+            <li>Complete Car Inspection By DAE Engineer Through Our Inspection Sheet</li>
+            <li>MECHANIC4U CERTIFICATION STICKER</li>
+          </ul>
+        </Cards>
+      </div>
+      <div className='w-full'>
+        <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
+          Our Featured Services
+        </h1>
+        <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
+        <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
+          We Offer Full Service & Maintenance</p>
+      </div>
+      <div className='p-20 grid grid-cols-4 gap-2'>
+        {
+          serviceGrid.map((service) => {
+            return (
+              <ServiceCell key={service.name} src={service.src} name={service.name} />
 
-          <div className='flex bg-gradient-to-r from-[#004578] to-[#1d72b2] text-white font-Muli text-3xl p-10 '>
-            <div className='text-right'>SUPRA<br /> package</div>
-            <div className='bg-white mt-8 w-[70px] h-[2px] rotate-[70deg]'></div>
-            <div>6499<br />onwards</div>
-          </div>
-          <div className='h-96 overflow-auto'>
-            <ul className="parts  space-y-2 p-10">
-              <li>Catalytic Cleaning by Machine</li>
-              <li>Brakes Service (RUST REMOVING &amp; GREASING)</li>
-              <li>Brake Pad Change if Required (PARTS WILL BE CHARGED SEPARATELY)</li>
-              <li>Throttle Body Cleaning</li>
-              <li>Air Intake Cleaning</li>
-              <li>MAP, MAF, TPS &amp; Oxygen Sensor Cleaning</li>
-              <li>Spark Plug Cleaning</li>
-              <li>Spark Coils Cleaning</li>
-              <li>Filters Cleaning</li>
-              <li>Computerized Scanning</li>
-              <li>Computerized Throttle Body Calibration</li>
-              <li>Complimentary Oil Change (OIL WILL BE CHARGED SEPARATELY) </li>
-              <li>Pre &amp; Post Inspection 🧐 </li>
-              <li>Complete Car Inspection By DAE Engineer Through Our Inspection Sheet</li>
-              <li>MECHANIC4U CERTIFICATION STICKER</li>
-            </ul>
+            )
+          })
+        }
 
 
-          </div>
 
-          <button className='mt-5 ml-20 px-20 py-4 bg-gradient-to-r from-[#004578] to-[#1d72b2] text-white font-Muli '>
-            Order Now
-          </button>
+
+      </div>
+      <div className='w-full'>
+        <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
+          We Provide Expert Services
+
+        </h1>
+        <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
+
+      </div>
+      <div className='flex p-20 justify-evenly space-x-10 items-center'>
+        <ul className="parts font-Muli space-y-2 p-10">
+          <li>General Auto Maintenance</li>
+          <li>Computerized Scanning</li>
+          <li>Manufacturer Recommended Service</li>
+          <li>Brake Service or Replacements</li>
+          <li>Catalytic Converter Cleaning</li>
+        </ul>
+        <div className=''>
+          <Image
+            src="/images/services.webp"
+            height={350}
+            width={500}
+            placeholder='blur'
+            blurDataURL='/images/services.webp'
+          />
         </div>
       </div>
+      <div className='w-full'>
+        <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
+          What Our Valuable Customers Says
+        </h1>
+        <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
+
+      </div>
+      <Reviews />
     </div>
   )
 }
