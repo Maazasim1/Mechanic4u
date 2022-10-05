@@ -12,6 +12,7 @@ export default function Services() {
             <div className='p-20'>
 
                 <Image
+                    alt="banner of services page"
                     src="/images/banner.webp"
                     width={1536}
                     height={558}

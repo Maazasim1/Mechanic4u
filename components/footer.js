@@ -10,6 +10,7 @@ export default function Footer() {
                     <div className='flex '>
                         <div className='w-72'>
                             <Image
+                                alt="logo"
                                 src="/images/mechanic4u.webp"
                                 height={170}
                                 width={170}
@@ -37,19 +38,21 @@ export default function Footer() {
                         <h4 className='text-[#CCCCCC] text-lg pb-3'>Follow Us</h4>
                         <div className='flex'>
                             <div className='px-2'>
-                            <a href='https://www.youtube.com/channel/UCBYxLcBvMh36LZlllL5wDQw' target='_blank'>
+                            <a href='https://www.youtube.com/channel/UCBYxLcBvMh36LZlllL5wDQw' rel="noreferrer" target='_blank'>
 
                                 <Image
+                                    alt='youtube link'
                                     src='/images/youtube.webp'
                                     width={25}
                                     height={25} />
                                     </a>
                             </div>
                             <div className='px-2'>
-                            <a href='https://www.instagram.com/mechanic4u.pk/' target='_blank'>
+                            <a href='https://www.instagram.com/mechanic4u.pk/' rel="noreferrer" target='_blank'>
 
 
                                 <Image
+                                    alt="instagram link"
                                     src="/images/instagram.webp"
                                     width={25}
                                     height={25}
@@ -57,9 +60,10 @@ export default function Footer() {
                                 </a>
                             </div>
                             <div className='px-2'>
-                            <a href='https://www.facebook.com/mechanic4u.pk' target='_blank'>
+                            <a href='https://www.facebook.com/mechanic4u.pk' rel="noreferrer" target='_blank'>
 
                                 <Image
+                                    alt="facebook link"
                                     src="/images/facebook.webp"
                                     width={25}
                                     height={25}
@@ -76,6 +80,7 @@ export default function Footer() {
                                 
 
                                 <Image
+                                    alt="ios app icon"
                                     src="/images/ios.webp"
                                     height={40}
                                     width={170}
@@ -85,6 +90,7 @@ export default function Footer() {
                             <div>
 
                                 <Image
+                                    alt="android app icon"
                                     src="/images/android.webp"
                                     height={40}
                                     width={100}

@@ -50,7 +50,7 @@ export default function Herobanner() {
 
                 </motion.div>
                 
-                <Image src={Carousel_1} alt='hero image 1' priority={true}/>
+                <Image  src={Carousel_1} alt='hero image 1' priority={true}/>
                         </>
                 )}
             </SwiperSlide>
@@ -84,7 +84,7 @@ export default function Herobanner() {
 </div>
 <div className=' absolute left-[50vw] bottom-32 animate-bounce z-10'>
 
-        <img className=' rotate-180'
+        <img alt="triangle to guide user to scroll down" className=' rotate-180'
 
 src='/images/triangle.png'
 

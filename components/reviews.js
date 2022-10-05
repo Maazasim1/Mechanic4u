@@ -17,7 +17,7 @@ export default function Reviews() {
             modules={[Navigation,Autoplay]}>
                 <SwiperSlide>
                     {({ isActive }) => (
-                        <div className='h-[80vh] w-full'>
+                        <div className='h-[90vh] w-full'>
                             <div className='flex justify-center items-center pt-20 pb-6'>
                                 <FontAwesomeIcon icon={faStar} className='text-[#1d72b2] text-[10px] w-4' />
                                 <FontAwesomeIcon icon={faStar} className='text-[#1d72b2] text-[10px] w-4' />
@@ -44,11 +44,11 @@ export default function Reviews() {
 
                                 className='flex justify-center p-20'>
                                 <Image
-                                    src='/images/car-2.webp'
-                                    height={230}
+                                    src='/images/vezel.webp'
+                                    height={330}
                                     width={600}
                                     placeholder="blue"
-                                    blurDataURL='/images/car-2.webp'
+                                    blurDataURL='/images/vezel.webp'
                                 />
 
                             </motion.div>
@@ -85,11 +85,11 @@ export default function Reviews() {
 
                                 className='flex justify-center p-20'>
                                 <Image
-                                    src='/images/car-1.webp'
-                                    height={230}
+                                    src='/images/alto.webp'
+                                    height={330}
                                     width={600}
                                     placeholder="blue"
-                                    blurDataURL='/images/car-1.webp'
+                                    blurDataURL='/images/alto.webp'
                                 />
 
                             </motion.div>
@@ -126,8 +126,8 @@ export default function Reviews() {
 
                                 className='flex justify-center p-20'>
                                 <Image
-                                    src='/images/car-3.webp'
-                                    height={230}
+                                    src='/images/landcruiser.webp'
+                                    height={330}
                                     width={600}
                                     placeholder="blue"
                                     blurDataURL='/images/car-3.webp'

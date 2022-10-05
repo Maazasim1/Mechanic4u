@@ -158,42 +158,53 @@ export default function Home() {
             <li>MECHANIC4U CERTIFICATION STICKER</li>
           </ul>
         </Cards>
-        <Cards name="SUPRA" price="6499">
+        <Cards name="HYBRID PREMIUM" price="8499">
           <ul className="parts  space-y-2 p-10">
+
+            <li>7 DAYS WORKMANSHIP WARRANTY</li>
+            <li>HYBRID Battery Health Test</li>
+            <li>HYBRID Battery Fan Cleaning</li>
             <li>Catalytic Cleaning by Machine</li>
-            <li>Brakes Service (RUST REMOVING &amp; GREASING)</li>
-            <li>Brake Pad Change if Required (PARTS WILL BE CHARGED SEPARATELY)</li>
-            <li>Throttle Body Cleaning</li>
-            <li>Air Intake Cleaning</li>
-            <li>MAP, MAF, TPS &amp; Oxygen Sensor Cleaning</li>
-            <li>Spark Plug Cleaning</li>
-            <li>Spark Coils Cleaning</li>
+            <li>Brakes service ( RUST REMOVING &amp; GREASING )</li>
+            <li>Brake pad change if required (PARTS WILL BE CHARGED SEPARATELY )</li>
+            <li>Engine Tuning</li>
+            <li>Throttle body Cleaning</li>
+            <li>Air intake Cleaning</li>
+            <li>MAP, MAF, TPS &amp; oxygen ensor Cleaning</li>
+            <li>Plug cleaning</li>
+            <li>Spark coils Cleaning</li>
             <li>Filters Cleaning</li>
             <li>Computerized Scanning</li>
-            <li>Computerized Throttle Body Calibration</li>
-            <li>Complimentary Oil Change (OIL WILL BE CHARGED SEPARATELY) </li>
-            <li>Pre &amp; Post Inspection 🧐 </li>
-            <li>Complete Car Inspection By DAE Engineer Through Our Inspection Sheet</li>
-            <li>MECHANIC4U CERTIFICATION STICKER</li>
+            <li>Complimentary oil change ( PARTS WILL BE CHARGED SEPARATELY)</li>
+            <li>Complete car inspection by DAE engineer through our inspection sheet</li>
+            <li>Pre &amp; Post inspection</li>
+
           </ul>
         </Cards>
-        <Cards name="SUPRA" price="6499">
+
+        <Cards name="PRO MAX" price="9499">
           <ul className="parts  space-y-2 p-10">
+            <li>7 DAYS WORKMANSHIP WARRANTY</li>
             <li>Catalytic Cleaning by Machine</li>
-            <li>Brakes Service (RUST REMOVING &amp; GREASING)</li>
-            <li>Brake Pad Change if Required (PARTS WILL BE CHARGED SEPARATELY)</li>
-            <li>Throttle Body Cleaning</li>
-            <li>Air Intake Cleaning</li>
-            <li>MAP, MAF, TPS &amp; Oxygen Sensor Cleaning</li>
-            <li>Spark Plug Cleaning</li>
-            <li>Spark Coils Cleaning</li>
-            <li>Filters Cleaning</li>
-            <li>Computerized Scanning</li>
-            <li>Computerized Throttle Body Calibration</li>
-            <li>Complimentary Oil Change (OIL WILL BE CHARGED SEPARATELY) </li>
-            <li>Pre &amp; Post Inspection 🧐 </li>
-            <li>Complete Car Inspection By DAE Engineer Through Our Inspection Sheet</li>
-            <li>MECHANIC4U CERTIFICATION STICKER</li>
+            <li>Brakes service all 4 wheels ( RUST REMOVING &amp; GREASING )</li>
+            <li>Computerized Tuning</li>
+            <li>Throttle body Cleaning</li>
+            <li>MAP, MAF, TPS &amp; oxygen ensor Cleaning</li>
+            <li>Computerised Scanning/Calibration</li>
+            <li>Complimentary oil change N Filter change ( SPARE PARTS WILL BE CHARGED SEPARATELY)</li>
+            <li>Complete car inspection by DAE engineer through our inspection sheet</li>
+            <li>Pre &amp; Post inspection</li>
+            <li>CAR DETAILING:</li>
+            <li>Ceramic Wax Compounding outer body( 2 MONTHS WARRANTY )</li>
+            <li>Carpet vacuum</li>
+            <li>Car mats cleaning</li>
+            <li>Dashboard, A/C Vents , Steering , Door Panels, Gear panel clean though ( APC )</li>
+            <li>Polished in fixed position</li>
+            <li>Trunk Cleaning</li>
+            <li>Engine Room cleaning</li>
+            <li>Complete Exterior Wash</li>
+            <li>Foam wash with Premium quality shampoo</li>
+            <li>Tyre wash and polish</li>
           </ul>
         </Cards>
       </div>
@@ -255,18 +266,18 @@ export default function Home() {
       <Reviews />
       <div className='w-full'>
         <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
-        We Maintain All Makes of Automobiles        </h1>
+          We Maintain All Makes of Automobiles        </h1>
         <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
         <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
-        Some of the popular makers</p>
+          Some of the popular makers</p>
       </div>
       <div className='p-20 flex justify-evenly'>
         <div className='shadow-2xl'>
           <Image
 
-          src='/images/logo_1.webp'
-          height={120}
-          width={140}
+            src='/images/logo_1.webp'
+            height={120}
+            width={140}
 
           />
 
@@ -274,9 +285,9 @@ export default function Home() {
         <div className='shadow-2xl'>
           <Image
 
-          src='/images/logo_2.webp'
-          height={120}
-          width={140}
+            src='/images/logo_2.webp'
+            height={120}
+            width={140}
 
           />
 
@@ -284,9 +295,9 @@ export default function Home() {
         <div className='shadow-2xl'>
           <Image
 
-          src='/images/logo_3.webp'
-          height={120}
-          width={140}
+            src='/images/logo_3.webp'
+            height={120}
+            width={140}
 
           />
 
@@ -294,9 +305,9 @@ export default function Home() {
         <div className='shadow-2xl'>
           <Image
 
-          src='/images/logo_4.webp'
-          height={120}
-          width={140}
+            src='/images/logo_4.webp'
+            height={120}
+            width={140}
 
           />
 
@@ -304,9 +315,9 @@ export default function Home() {
         <div className='shadow-2xl'>
           <Image
 
-          src='/images/logo_5.webp'
-          height={120}
-          width={140}
+            src='/images/logo_5.webp'
+            height={120}
+            width={140}
 
           />
 
@@ -314,9 +325,9 @@ export default function Home() {
         <div className='shadow-2xl'>
           <Image
 
-          src='/images/logo_6.webp'
-          height={120}
-          width={140}
+            src='/images/logo_6.webp'
+            height={120}
+            width={140}
 
           />
 
@@ -324,14 +335,14 @@ export default function Home() {
         <div className='shadow-2xl'>
           <Image
 
-          src='/images/logo_7.webp'
-          height={120}
-          width={140}
+            src='/images/logo_7.webp'
+            height={120}
+            width={140}
 
           />
 
         </div>
-        
+
 
       </div>
       <Footer />

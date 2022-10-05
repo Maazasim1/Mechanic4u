@@ -11,17 +11,19 @@ export default function Upperbar() {
             <div className='flex p-24'>
 
                 <div className='px-2'>
-                    <a href='https://www.youtube.com/channel/UCBYxLcBvMh36LZlllL5wDQw' target='_blank'>
+                    <a href='https://www.youtube.com/channel/UCBYxLcBvMh36LZlllL5wDQw' rel="noreferrer" target='_blank'>
                     <Image
+                        alt="youtube"
                         src={Youtube}
                         width={25}
                         height={25} />
                         </a>
                 </div>
                 <div className='px-2'>
-                <a href='https://www.instagram.com/mechanic4u.pk/' target='_blank'>
+                <a href='https://www.instagram.com/mechanic4u.pk/' rel="noreferrer" target='_blank'>
 
                     <Image
+                        alt="instagram"
                         src={Instagram}
                         width={25}
                         height={25}
@@ -29,10 +31,11 @@ export default function Upperbar() {
                     </a>
                 </div>
                 <div className='px-2'>
-                <a href='https://www.facebook.com/mechanic4u.pk' target='_blank'>
+                <a href='https://www.facebook.com/mechanic4u.pk' rel="noreferrer" target='_blank'>
 
 
                     <Image
+                        alt="facebook"
                         src={Facebook}
                         width={25}
                         height={25}
