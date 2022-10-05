@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Upperbar from '../components/upperbar'
@@ -25,11 +24,6 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet" />
-      </Head>
       <Upperbar />
       <Lowerbar />
       <Herobanner />
@@ -43,7 +37,7 @@ export default function Home() {
         </p>
         <div className='flex justify-around p-20 items-center space-x-6'>
           <div className='flex-shrink-0'>
-            <Image src='/images/image_1.webp' height={430} width={450} placeholder="blur" blurDataURL='/images/image_1.webp' />
+            <Image alt="picure showing a person doing maintenance on a car" src='/images/image_1.webp' height={430} width={450} placeholder="blur" blurDataURL='/images/image_1.webp' />
 
           </div>
           <div className='w-full'>
@@ -72,6 +66,7 @@ export default function Home() {
           <div>
             <div className='rounded-full bg-white shadow-lg'>
               <Image
+                alt='how booking works at mechanic4u'
                 src='/images/how-it-works-3.webp'
                 height={250}
                 width={250}
@@ -87,6 +82,7 @@ export default function Home() {
 
             <div className='rounded-full bg-white shadow-lg'>
               <Image
+                alt='how booking works at mechanic4u'
                 src='/images/how-it-works-1.webp'
                 height={250}
                 width={250}
@@ -102,6 +98,7 @@ export default function Home() {
           <div>
             <div className='rounded-full bg-white shadow-lg'>
               <Image
+                alt='how booking works at mechanic4u'
                 src='/images/how-it-works-2.webp'
                 height={250}
                 width={250}
@@ -117,6 +114,7 @@ export default function Home() {
           <div>
             <div className='rounded-full bg-white shadow-lg'>
               <Image
+                alt='how booking works at mechanic4u'
                 src='/images/how-it-works-4.webp'
                 height={250}
                 width={250}
@@ -248,6 +246,7 @@ export default function Home() {
         </ul>
         <div className=''>
           <Image
+            alt='how booking works at mechanic4u'
             src="/images/services.webp"
             height={350}
             width={500}
@@ -274,7 +273,7 @@ export default function Home() {
       <div className='p-20 flex justify-evenly'>
         <div className='shadow-2xl'>
           <Image
-
+            alt='car logo'
             src='/images/logo_1.webp'
             height={120}
             width={140}
@@ -284,6 +283,7 @@ export default function Home() {
         </div>
         <div className='shadow-2xl'>
           <Image
+            alt='car logo'
 
             src='/images/logo_2.webp'
             height={120}
@@ -294,6 +294,8 @@ export default function Home() {
         </div>
         <div className='shadow-2xl'>
           <Image
+            alt='car logo'
+
 
             src='/images/logo_3.webp'
             height={120}
@@ -304,6 +306,8 @@ export default function Home() {
         </div>
         <div className='shadow-2xl'>
           <Image
+            alt='car logo'
+
 
             src='/images/logo_4.webp'
             height={120}
@@ -314,6 +318,8 @@ export default function Home() {
         </div>
         <div className='shadow-2xl'>
           <Image
+            alt='car logo'
+
 
             src='/images/logo_5.webp'
             height={120}
@@ -324,6 +330,8 @@ export default function Home() {
         </div>
         <div className='shadow-2xl'>
           <Image
+            alt='car logo'
+
 
             src='/images/logo_6.webp'
             height={120}
@@ -334,6 +342,8 @@ export default function Home() {
         </div>
         <div className='shadow-2xl'>
           <Image
+            alt='car logo'
+
 
             src='/images/logo_7.webp'
             height={120}

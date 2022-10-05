@@ -44,6 +44,7 @@ export default function Reviews() {
 
                                 className='flex justify-center p-20'>
                                 <Image
+                                    alt="vezel"
                                     src='/images/vezel.webp'
                                     height={330}
                                     width={600}
@@ -85,6 +86,7 @@ export default function Reviews() {
 
                                 className='flex justify-center p-20'>
                                 <Image
+                                    alt="alto"
                                     src='/images/alto.webp'
                                     height={330}
                                     width={600}
@@ -126,6 +128,7 @@ export default function Reviews() {
 
                                 className='flex justify-center p-20'>
                                 <Image
+                                    alt="landcruiser"
                                     src='/images/landcruiser.webp'
                                     height={330}
                                     width={600}

@@ -7,6 +7,7 @@ export default function ServiceCell(props) {
                 <div className='overflow-hidden'>
 
                     <Image
+                        alt="dynamic service grid pictures"
                         src={props.src}
                         height={180}
                         width={210}

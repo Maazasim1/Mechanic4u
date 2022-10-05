@@ -7,6 +7,7 @@ export default function Lowerbar() {
         <div className='px-20'>
 
         <Image
+            alt="Logo"
             src='/images/mechanic4u.webp'
             height={120}
             width={120}

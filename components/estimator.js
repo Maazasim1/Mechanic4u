@@ -5,7 +5,7 @@ export default function Estimator() {
         <div className='flex h-32 bg-[#f5f5f5] px-20 py-5'>
             <div className='flex justify-center items-center space-x-2'>
                 <div className='h-20 w-20'>
-                    <img src='/images/calculator.svg' />
+                    <img alt="calculator" src='/images/calculator.svg' />
                 </div>
                 <h1 className='font-Muli font-[900] text-4xl text-[#3A3A3A]'>
                     Car Repair<br />Estimator
