@@ -1,9 +1,7 @@
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Upperbar from '../components/upperbar'
 import Lowerbar from '../components/lowerbar'
 import Herobanner from '../components/herobanner'
-import Estimator from '../components/estimator'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import Cards from '../components/cards'
