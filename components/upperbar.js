@@ -12,6 +12,8 @@ export default function Upperbar() {
     return (
         <>
         <Modal show={show} setShow={setShow} />
+        <div className='sticky top-0 sm:z-30 z-50'>
+            
         <div className='flex  bg-slate-800 h-12 items-center justify-between  overflow-hidden'>
             <div className='sm:flex hidden p-24'>
 
@@ -60,6 +62,7 @@ export default function Upperbar() {
             </div>
 
 
+        </div>
         </div>
         </>
     )
