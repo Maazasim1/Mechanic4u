@@ -5,3 +5,32 @@
 
 .parts>li:before { content: '🔧'; margin-left: -20px; margin-right: 10px; } 
 
+
+.navbar>li {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-family: 'Mulish';
+  }
+  
+  .navbar>li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .navbar>li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .navbar>li:focus:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

@@ -8,6 +8,11 @@ export default function Parts() {
     <div>
         <Upperbar />
         <Lowerbar />
+        <div className='w-full text-center text-6xl p-20 font-Muli text-black'>
+          COMING SOON
+
+
+        </div>
         <Footer />
     </div>
   )
