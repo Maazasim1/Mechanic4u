@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Footer from '../components/footer'
 import Lowerbar from '../components/lowerbar'
 import Upperbar from '../components/upperbar'
@@ -10,10 +10,14 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { Autoplay } from 'swiper';
 import Cards from '../components/cards'
+import Modal from '../components/modal'
 
 export default function Packages() {
+  const [show,setShow]=useState(false)
   return (
+
     <div>
+      <Modal show={show} setShow={setShow}/>
 
       <Upperbar />
       <Lowerbar />
@@ -51,7 +55,7 @@ export default function Packages() {
         >
           <SwiperSlide>
 
-            <div className='flex sm:flex-row flex-col justify-center space-y-3 sm:space-x-5'>
+            <div className='flex sm:flex-row flex-col justify-center sm:items-end space-y-3 sm:space-x-5'>
               <Cards name='Inspection Checkup' price="4000">
                 <div class="marquee">
                   <div>
@@ -115,8 +119,8 @@ export default function Packages() {
           </SwiperSlide>
           <SwiperSlide>
 
-            <div className='flex sm:flex-row flex-col justify-center space-y-3 sm:space-x-5'>
-              <Cards name='SUPRA Package' price='5999'>
+            <div className='flex sm:flex-row sm:items-end flex-col justify-center space-y-3 sm:space-x-5'>
+              <Cards name='SUPRA' price='5999'>
                 <ul className="parts  space-y-2 p-10">
                   <li>Catalytic Cleaning by Machine</li>
                   <li>Brakes Service (RUST REMOVING &amp; GREASING)</li>
@@ -136,7 +140,7 @@ export default function Packages() {
                 </ul>
 
               </Cards>
-              <Cards name='PRO MAX Package' price='7999'>
+              <Cards name='PRO MAX' price='7999'>
                 <div class="marquee">
                   <div>
                     <p>Hatchback Cars <b>(Rs:8000)</b></p>
@@ -172,10 +176,7 @@ export default function Packages() {
               </Cards>
 
 
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Cards name='PRO MAX Package' price='7999'>
+            <Cards name='PRO MAX ' price='7999'>
               <div class="marquee">
                 <div>
                   <p>600cc - 1000cc <b>(Rs:3000)</b></p>
@@ -184,7 +185,7 @@ export default function Packages() {
                   <p>2000cc - 3000cc <b>(Rs:4500)</b></p>
                 </div>
               </div>
-              <ul class="mechanic_li">
+              <ul className="parts  space-y-2 p-10">
                 <li>Carburetor Settings</li>
                 <li>Tappets Adjustment</li>
                 <li>Engine Oil Replacement</li>
@@ -200,10 +201,9 @@ export default function Packages() {
               </ul>
 
             </Cards>
-
-
+            </div>
           </SwiperSlide>
-
+          
         </Swiper>
       </div>
       <div className='w-full'>

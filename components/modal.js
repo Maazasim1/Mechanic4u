@@ -2,6 +2,8 @@ import React from 'react'
 import { useRef } from 'react'
 import { postData } from '../lib/userdata/utils';
 
+import ReactPortal from './reactportal';
+
 
 export default function Modal(props) {
     const fname = useRef();
@@ -43,7 +45,9 @@ export default function Modal(props) {
 
     if (props.show) {
         return (
-            <div className='sm:p-16  bg-transparent overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[100] w-full md:inset-0 h-modal md:h-full'>
+            <ReactPortal wrapperId="react-portal-modal-container">
+
+            <div className='sm:p-16 fixed  bg-transparent overflow-y-auto overflow-x-hidden top-0 right-0 left-0 z-[100] w-full md:inset-0 h-modal md:h-full'>
                 <button onClick={() => props.setShow(!props.show)} className='absolute right-7 top-7 text-3xl z-50'>✖</button>
                 <div className=''>
                     <div className="h-screen md:flex">
@@ -154,6 +158,7 @@ export default function Modal(props) {
 
 
             </div>
+            </ReactPortal>
 
         )
     }
