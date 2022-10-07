@@ -18,25 +18,27 @@ export default function Packages() {
       <Upperbar />
       <Lowerbar />
 
-      <div className="w-full h-[350px] overflow-hidden">
+      <div className="w-full h-[200px] sm:overflow-hidden">
         <Image
           src="/images/package_header.webp"
           height={578}
-          width={1600}
+          width={1000}
+          layout="responsive"
           placeholder="blur"
           blurDataURL="/images/package_header.webp"
           alt="packages banner"
+          className='object-cover'
         />
 
       </div>
-      <div className='text-left w-[620px] text-white relative bottom-64 left-32'>
-        <h2 className='py-5 font-Muli font-bold text-5xl'>Car Packages</h2>
-        <p className=' text-lg'>
+      <div className='text-left sm:w-[620px] px-10 text-white relative sm:bottom-64 bottom-40 sm:left-32'>
+        <h2 className='sm:py-5 font-Muli font-bold text-2xl sm:text-5xl'>Car Packages</h2>
+        <p className=' sm:text-lg text-sm'>
           Our mechanics are mobile. Not only do we have significantly lower overhead costs compared to the local shops, but as a national brand, we are able to negotiate better prices from the auto parts vendors. We pass these savings to you! The bigger the job, the more you save.
         </p>
       </div>
 
-      <div>
+      <div className='sm:p-0 p-2'>
       <Swiper
           
           navigation={true}
@@ -49,7 +51,7 @@ export default function Packages() {
           >
             <SwiperSlide>
 
-            <div className='flex justify-center space-x-5'>
+            <div className='flex sm:flex-row flex-col justify-center space-y-3 sm:space-x-5'>
               <Cards>
                 
               </Cards>
@@ -64,7 +66,7 @@ export default function Packages() {
             </SwiperSlide>
             <SwiperSlide>
 
-            <div className='flex justify-center space-x-5'>
+            <div className='flex sm:flex-row flex-col justify-center space-y-3 sm:space-x-5'>
               <Cards>
                 
               </Cards>
@@ -79,7 +81,7 @@ export default function Packages() {
             </SwiperSlide>
             <SwiperSlide>
 
-            <div className='flex justify-center space-x-5'>
+            <div className='flex sm:flex-row flex-col justify-center space-y-3 sm:space-x-5'>
               <Cards>
                 
               </Cards>
@@ -102,7 +104,7 @@ export default function Packages() {
         <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
           Some of the popular makers</p>
       </div>
-      <div className='p-20 flex justify-evenly'>
+      <div className='sm:p-20 p-10 flex justify-evenly'>
         <div className='shadow-2xl'>
           <Image
             alt='car logo'
@@ -136,7 +138,7 @@ export default function Packages() {
           />
 
         </div>
-        <div className='shadow-2xl'>
+        <div className='sm:block hidden shadow-2xl'>
           <Image
             alt='car logo'
 
@@ -148,7 +150,7 @@ export default function Packages() {
           />
 
         </div>
-        <div className='shadow-2xl'>
+        <div className='sm:block hidden shadow-2xl'>
           <Image
             alt='car logo'
 
@@ -160,7 +162,7 @@ export default function Packages() {
           />
 
         </div>
-        <div className='shadow-2xl'>
+        <div className='sm:block hidden shadow-2xl'>
           <Image
             alt='car logo'
 
@@ -172,7 +174,7 @@ export default function Packages() {
           />
 
         </div>
-        <div className='shadow-2xl'>
+        <div className='sm:block hidden shadow-2xl'>
           <Image
             alt='car logo'
 

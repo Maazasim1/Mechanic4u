@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 export default function Footer() {
     return (
-        <>
-            <footer className='w-full h-[60vh] bg-[#081019] '>
-                <div className='flex justify-around py-14'>
+        <div className='overflow-hidden'>
+            <footer className='w-full sm:h-[60vh] h-80vh] sm:pl-0 pl-10  bg-[#081019] '>
+                <div className='flex sm:flex-row flex-col justify-around py-14'>
 
-                    <div className='flex '>
+                    <div className='flex  sm:flex-row flex-col'>
                         <div className='w-72'>
                             <Image
                                 alt="logo"
@@ -21,7 +21,7 @@ export default function Footer() {
                             </p>
 
                         </div>
-                        <div className='pl-20'>
+                        <div className='sm:pl-20 sm:py-0 py-3'>
                             <h4 className='text-[#CCCCCC] text-lg pb-3x'>Services</h4>
                             <ul className='text-[#818282]'>
                                 <li>Home</li>
@@ -36,7 +36,7 @@ export default function Footer() {
 
                     <div className=''>
                         <h4 className='text-[#CCCCCC] text-lg pb-3'>Follow Us</h4>
-                        <div className='flex'>
+                        <div className='flex '>
                             <div className='px-2'>
                             <a href='https://www.youtube.com/channel/UCBYxLcBvMh36LZlllL5wDQw' rel="noreferrer" target='_blank'>
 
@@ -75,7 +75,7 @@ export default function Footer() {
                         <div className='text-[#CCCCCC] py-10'>
                             Mobile Apps Coming Soon
                         </div>
-                        <div className='flex'>
+                        <div className='flex '>
                             <div>
                                 
 
@@ -105,10 +105,10 @@ export default function Footer() {
 
                 </div>
             </footer>
-            <div className='w-full h-14 bg-black text-[#cccccc] px-24 py-5'>
+            <div className='w-full h-14 bg-black text-[#cccccc] sm:px-24 p-5 py-5'>
             © 2020 Mechanic4U, All Rights Reserved
 
             </div>
-        </>
+        </div>
     )
 }

@@ -9,7 +9,7 @@ export default function Aboutus() {
     <div>
         <Upperbar />
         <Lowerbar />
-        <div className='p-20'>
+        <div className='sm:p-20 p-5'>
           <Image
             src="/images/aboutus_banner.webp"
             width={1335}
@@ -27,7 +27,7 @@ export default function Aboutus() {
         <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
       
       </div>
-      <div className='flex justify-around p-20 items-center space-x-6'>
+      <div className='flex sm:flex-row flex-col  justify-around p-20 items-center space-x-6'>
           <div className='flex-shrink-0'>
             <Image alt="picure showing a person doing maintenance on a car" src='/images/image_1.webp' height={430} width={450} placeholder="blur" blurDataURL='/images/image_1.webp' />
 

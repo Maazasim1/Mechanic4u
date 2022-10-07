@@ -8,7 +8,8 @@ import Cards from '../components/cards'
 import ServiceCell from '../components/servicecell'
 import Reviews from '../components/reviews'
 import Footer from '../components/footer'
-
+import Link from 'next/link';
+import AccordionApp from '../components/accordion';
 export default function Home() {
   const serviceGrid = [
     { src: "/images/service-1.webp", name: "DIAGNOSTICS" },
@@ -26,14 +27,14 @@ export default function Home() {
       <Lowerbar />
       <Herobanner />
       <div className='w-full'>
-        <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
+        <h1 className='text-center sm:p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
           WELCOME TO CAR MAINTENANCE SERVICES
         </h1>
         <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
         <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
           More Than 10 Years of Experience
         </p>
-        <div className='flex justify-around p-20 items-center space-x-6'>
+        <div className='flex sm:flex-row flex-col justify-around p-20 items-center space-x-6'>
           <div className='flex-shrink-0'>
             <Image alt="picure showing a person doing maintenance on a car" src='/images/image_1.webp' height={430} width={450} placeholder="blur" blurDataURL='/images/image_1.webp' />
 
@@ -46,7 +47,9 @@ export default function Home() {
               <div className='w-5 inline-block px-[2px] mx-2'>  <FontAwesomeIcon className='text-[1px] text-[#1d72b2]' icon={faCheck} /></div>Same day service is provided in many instances<br />
               <div className='w-5 inline-block px-[2px] mx-2'>  <FontAwesomeIcon className='text-[1px] text-[#1d72b2]' icon={faCheck} /></div>Our work is warrantied for a full year
             </div>
-            <button className='px-8 py-4 border-2 hover:bg-[#1d72b2] hover:text-white font-Muli border-[#1d72b2]'>+ MORE INFO</button>
+            <Link href="/about-us">
+              <a className='px-8 py-4 border-2 hover:bg-[#1d72b2] hover:text-white font-Muli border-[#1d72b2]'>+ MORE INFO</a>
+            </Link>
           </div>
 
 
@@ -60,7 +63,7 @@ export default function Home() {
         <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
         <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
           We offer full service maintenance</p>
-        <div className='flex flex-row pt-20 space-x-10 px-32'>
+        <div className='sm:flex sm:flex-row grid grid-cols-2 sm:justify-center pt-20 sm:space-x-10 sm:px-32 gap-3 px-5'>
           <div>
             <div className='rounded-full bg-white shadow-lg'>
               <Image
@@ -134,7 +137,7 @@ export default function Home() {
         <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
           Fixed price car servicing packages</p>
       </div>
-      <div className='flex justify-evenly flex-row'>
+      <div className='flex sm:flex-row flex-col sm:justify-evenly justify-center items-center'>
         <Cards name="SUPRA" price="6499">
           <ul className="parts  space-y-2 p-10">
             <li>Catalytic Cleaning by Machine</li>
@@ -212,7 +215,7 @@ export default function Home() {
         <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
           We Offer Full Service & Maintenance</p>
       </div>
-      <div className='p-20 grid grid-cols-4 gap-2'>
+      <div className='sm:p-20 p-10 grid sm:grid-cols-4 grid-cols-2 gap-2'>
         {
           serviceGrid.map((service) => {
             return (
@@ -234,7 +237,7 @@ export default function Home() {
         <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
 
       </div>
-      <div className='flex p-20 justify-evenly space-x-10 items-center'>
+      <div className='flex sm:flex-row flex-col sm:p-20 p-10 sm:justify-evenly justify-center sm:space-x-10 items-center'>
         <ul className="parts font-Muli space-y-2 p-10">
           <li>General Auto Maintenance</li>
           <li>Computerized Scanning</li>
@@ -261,6 +264,9 @@ export default function Home() {
 
       </div>
       <Reviews />
+      <AccordionApp />
+
+      
       <div className='w-full'>
         <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
           We Maintain All Makes of Automobiles        </h1>
@@ -268,7 +274,7 @@ export default function Home() {
         <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
           Some of the popular makers</p>
       </div>
-      <div className='p-20 flex justify-evenly'>
+      <div className='sm:p-20 p-10 space-x-2 flex justify-evenly'>
         <div className='shadow-2xl'>
           <Image
             alt='car logo'
@@ -302,7 +308,7 @@ export default function Home() {
           />
 
         </div>
-        <div className='shadow-2xl'>
+        <div className='shadow-2xl sm:block hidden'>
           <Image
             alt='car logo'
 
@@ -314,7 +320,7 @@ export default function Home() {
           />
 
         </div>
-        <div className='shadow-2xl'>
+        <div className='shadow-2xl sm:block hidden'>
           <Image
             alt='car logo'
 
@@ -326,7 +332,7 @@ export default function Home() {
           />
 
         </div>
-        <div className='shadow-2xl'>
+        <div className='shadow-2xl sm:block hidden'>
           <Image
             alt='car logo'
 
@@ -338,7 +344,7 @@ export default function Home() {
           />
 
         </div>
-        <div className='shadow-2xl'>
+        <div className='shadow-2xl sm:block hidden'>
           <Image
             alt='car logo'
 

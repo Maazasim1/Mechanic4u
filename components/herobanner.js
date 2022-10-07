@@ -13,7 +13,7 @@ import { Autoplay } from 'swiper';
 export default function Herobanner() {
   return (
     <>
-    <div className='flex h-[70vh] overflow-hidden'>
+    <div className='flex sm:h-[70vh] sm:pb-0 pb-10 overflow-hidden'>
 
         <Swiper
           
@@ -37,14 +37,14 @@ export default function Herobanner() {
 
                       transition={{delay: 0.2}}
                       
-                      className='absolute top-11 w-full h-full left-11 font-Muli z-20 text-center  text-white'>
-                    <h1 className='text-5xl py-5'>
+                      className='absolute top-11 w-full h-full sm:left-11  font-Muli z-20 text-center  text-white'>
+                    <h1 className='sm:text-5xl text-sm sm:py-5'>
                         Multi-Point
                     </h1>
-                    <h2 className='text-8xl font-bold py-5'>
+                    <h2 className='sm:text-8xl text-base font-bold sm:py-5'>
                         Vehicle Inspection
                     </h2>
-                    <p className='py-5'>
+                    <p className='text-xs sm:text-base sm:py-5'>
                         NO-CHARGE START, STOP AND STEERING CHECK
                     </p>
 
@@ -63,14 +63,14 @@ export default function Herobanner() {
                       scale: isActive ? 1 : 0.5, }}
 
                       transition={{delay: 0.2}}
-             className='absolute top-11 pl-10 left-11 font-Muli z-20 text-white'>
-                    <h1 className='text-5xl py-5'>
+             className='absolute top-11 pl-10 sm:left-11 font-Muli z-20 text-white'>
+                    <h1 className='sm:text-5xl text-sm sm:py-5'>
                         Offer Fast
                     </h1>
-                    <h2 className='text-8xl font-bold py-5'>
+                    <h2 className='sm:text-8xl font-bold text-base sm:py-5'>
                         Reliable Service
                     </h2>
-                    <p className='py-5'>
+                    <p className='text-xs sm:text-base sm:py-5'>
                         OVER 10 YEARS OF QUALITY AUTO SERVICE
                     </p>
 
@@ -82,14 +82,7 @@ export default function Herobanner() {
         </Swiper>
     
 </div>
-<div className=' absolute left-[50vw] bottom-32 animate-bounce z-10 rotate-180'>
 
-        <Image width={30} height={30} alt="triangle to guide user to scroll down" className=' rotate-180'
-
-src='/images/triangle.png'
-
-/>
-</div>
     </>
   )
 }

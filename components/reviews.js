@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 
 export default function Reviews() {
     return (
-        <div className='p-20'>
+        <div className='sm:p-20 p-10'>
             <Swiper navigation={true}
             autoplay={{
                 delay: 2500,
@@ -42,7 +42,7 @@ export default function Reviews() {
 
                                 transition={{ delay: 0.2 }}
 
-                                className='flex justify-center p-20'>
+                                className='flex justify-center sm:p-20'>
                                 <Image
                                     alt="vezel"
                                     src='/images/vezel.webp'
@@ -84,7 +84,7 @@ export default function Reviews() {
 
                                 transition={{ delay: 0.2 }}
 
-                                className='flex justify-center p-20'>
+                                className='flex justify-center sm:p-20 '>
                                 <Image
                                     alt="alto"
                                     src='/images/alto.webp'
@@ -126,7 +126,7 @@ export default function Reviews() {
 
                                 transition={{ delay: 0.2 }}
 
-                                className='flex justify-center p-20'>
+                                className='flex justify-center sm:p-20'>
                                 <Image
                                     alt="landcruiser"
                                     src='/images/landcruiser.webp'
