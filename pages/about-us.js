@@ -16,6 +16,7 @@ export default function Aboutus() {
             height={485}
             placeholder="blur"
             blurDataURL='/images/aboutus_banner.webp'
+            alt="about us banner"
           />
 
         </div>

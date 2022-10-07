@@ -39,6 +39,7 @@ export default function Services() {
                             width={1071}
                             placeholder="blur"
                             blurDataURL='/images/s-1.webp'
+                            alt="preventative maintenence"
                         />
                     </div>
                     <div className='h-[260px] bg-[#f5f5f5]'>
@@ -58,6 +59,7 @@ export default function Services() {
                             width={1071}
                             placeholder="blur"
                             blurDataURL='/images/s-1.webp'
+                            alt="maintenence"
                         />
                     </div>
                     <div className='h-[260px] bg-[#f5f5f5]'>
@@ -77,6 +79,7 @@ export default function Services() {
                             width={1071}
                             placeholder="blur"
                             blurDataURL='/images/s-1.webp'
+                            alt="maintenance"
                         />
                     </div>
                     <div className='h-[260px] bg-[#f5f5f5]'>
@@ -96,6 +99,7 @@ export default function Services() {
                             width={1071}
                             placeholder="blur"
                             blurDataURL='/images/s-1.webp'
+                            alt="maintenance"
                         />
                     </div>
                     <div className='h-[260px] bg-[#f5f5f5]'>
@@ -115,6 +119,7 @@ export default function Services() {
                             width={1071}
                             placeholder="blur"
                             blurDataURL='/images/s-1.webp'
+                            alt="maintenance"
                         />
                     </div>
                     <div className='h-[260px] bg-[#f5f5f5]'>
@@ -134,6 +139,7 @@ export default function Services() {
                             width={1071}
                             placeholder="blur"
                             blurDataURL='/images/s-1.webp'
+                            alt="maintenance"
                         />
                     </div>
                     <div className='h-[260px] bg-[#f5f5f5]'>
