@@ -103,7 +103,7 @@ export default function Lowerbar() {
                   <li className=''>VIDEO</li>
                 </Link>
                 <Link href="/contact">
-                  <li className=''>CONTACTS</li>
+                  <li className=''>CONTACT US</li>
                 </Link>
               </ul>
 

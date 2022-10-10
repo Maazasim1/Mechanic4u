@@ -4,9 +4,19 @@ import Upperbar from '../components/upperbar'
 import Image from 'next/image'
 import Footer from '../components/footer'
 import Modal from '../components/modal'
-
+import ServiceCell from '../components/servicecell'
 export default function Services() {
     const [show, setShow] = useState(false)
+
+    const serviceGrid = [
+        { src: "/images/service-1.webp", name: "DIAGNOSTICS" },
+        { src: "/images/service-2.webp", name: "CATALYTIC CONVERTER CLEANING" },
+        { src: "/images/service-7.webp", name: "ENGINE TUNE UP" },
+        { src: "/images/service-3.webp", name: "OIL, LUBE, FILTERS" },
+        { src: "/images/service-4.webp", name: "TRANSMISION" },
+        { src: "/images/service-5.webp", name: "BATTERIES" },
+        { src: "/images/service-6.webp", name: "SUSPENSION OVERHAUL" },
+    ]
 
     return (
         <>
@@ -35,127 +45,18 @@ export default function Services() {
                         We offer full service auto repair & maintenance
                     </p>
                 </div>
-                <div className='grid sm:grid-cols-3 grid-cols-1 sm:gap-7 sm:p-20 p-5'>
-                    <div className=''>
-                        <div className='h-[260px] overflow-hidden'>
-                            <Image
-                                src='/images/s-1.webp'
-                                height={726}
-                                width={1071}
-                                placeholder="blur"
-                                blurDataURL='/images/s-1.webp'
-                                alt="preventative maintenence"
-                            />
-                        </div>
-                        <div className='h-[260px] bg-[#f5f5f5]'>
-                            <h6 className='text-center p-10 font-Muli text-3xl text-[#3a3a3a]'>PREVENTATIVE<br />MAINTENANCE</h6>
-                            <p className='text-center px-8 font-Muli text-sm text-[#3a3a3a]'>The best way to minimize breakdowns is doing routine maintenance</p>
+                <div className='sm:p-20 p-10 grid sm:grid-cols-4 grid-cols-2 gap-2'>
+                    {
+                        serviceGrid.map((service) => {
+                            return (
+                                <ServiceCell key={service.name} src={service.src} name={service.name} />
 
-                        </div>
+                            )
+                        })
+                    }
 
 
 
-                    </div>
-                    <div className=''>
-                        <div className='h-[260px] overflow-hidden'>
-                            <Image
-                                src='/images/s-1.webp'
-                                height={726}
-                                width={1071}
-                                placeholder="blur"
-                                blurDataURL='/images/s-1.webp'
-                                alt="maintenence"
-                            />
-                        </div>
-                        <div className='h-[260px] bg-[#f5f5f5]'>
-                            <h6 className='text-center p-10 font-Muli text-3xl text-[#3a3a3a]'>PREVENTATIVE<br />MAINTENANCE</h6>
-                            <p className='text-center px-8 font-Muli text-sm text-[#3a3a3a]'>The best way to minimize breakdowns is doing routine maintenance</p>
-
-                        </div>
-
-
-
-                    </div>
-                    <div className=''>
-                        <div className='h-[260px] overflow-hidden'>
-                            <Image
-                                src='/images/s-1.webp'
-                                height={726}
-                                width={1071}
-                                placeholder="blur"
-                                blurDataURL='/images/s-1.webp'
-                                alt="maintenance"
-                            />
-                        </div>
-                        <div className='h-[260px] bg-[#f5f5f5]'>
-                            <h6 className='text-center p-10 font-Muli text-3xl text-[#3a3a3a]'>PREVENTATIVE<br />MAINTENANCE</h6>
-                            <p className='text-center px-8 font-Muli text-sm text-[#3a3a3a]'>The best way to minimize breakdowns is doing routine maintenance</p>
-
-                        </div>
-
-
-
-                    </div>
-                    <div className=''>
-                        <div className='h-[260px] overflow-hidden'>
-                            <Image
-                                src='/images/s-1.webp'
-                                height={726}
-                                width={1071}
-                                placeholder="blur"
-                                blurDataURL='/images/s-1.webp'
-                                alt="maintenance"
-                            />
-                        </div>
-                        <div className='h-[260px] bg-[#f5f5f5]'>
-                            <h6 className='text-center p-10 font-Muli text-3xl text-[#3a3a3a]'>PREVENTATIVE<br />MAINTENANCE</h6>
-                            <p className='text-center px-8 font-Muli text-sm text-[#3a3a3a]'>The best way to minimize breakdowns is doing routine maintenance</p>
-
-                        </div>
-
-
-
-                    </div>
-                    <div className=''>
-                        <div className='h-[260px] overflow-hidden'>
-                            <Image
-                                src='/images/s-1.webp'
-                                height={726}
-                                width={1071}
-                                placeholder="blur"
-                                blurDataURL='/images/s-1.webp'
-                                alt="maintenance"
-                            />
-                        </div>
-                        <div className='h-[260px] bg-[#f5f5f5]'>
-                            <h6 className='text-center p-10 font-Muli text-3xl text-[#3a3a3a]'>PREVENTATIVE<br />MAINTENANCE</h6>
-                            <p className='text-center px-8 font-Muli text-sm text-[#3a3a3a]'>The best way to minimize breakdowns is doing routine maintenance</p>
-
-                        </div>
-
-
-
-                    </div>
-                    <div className=''>
-                        <div className='h-[260px] overflow-hidden'>
-                            <Image
-                                src='/images/s-1.webp'
-                                height={726}
-                                width={1071}
-                                placeholder="blur"
-                                blurDataURL='/images/s-1.webp'
-                                alt="maintenance"
-                            />
-                        </div>
-                        <div className='h-[260px] bg-[#f5f5f5]'>
-                            <h6 className='text-center p-10 font-Muli text-3xl text-[#3a3a3a]'>PREVENTATIVE<br />MAINTENANCE</h6>
-                            <p className='text-center px-8 font-Muli text-sm text-[#3a3a3a]'>The best way to minimize breakdowns is doing routine maintenance</p>
-
-                        </div>
-
-
-
-                    </div>
 
                 </div>
                 <div className='w-full'>

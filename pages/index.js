@@ -11,14 +11,7 @@ import Footer from '../components/footer'
 import Link from 'next/link';
 import AccordionApp from '../components/accordion';
 export default function Home() {
-  const serviceGrid = [
-    { src: "/images/service-1.webp", name: "DIAGNOSTICS" },
-    { src: "/images/service-2.webp", name: "CATALYTIC CONVERTER CLEANING" },
-    { src: "/images/service-3.webp", name: "OIL, LUBE, FILTERS" },
-    { src: "/images/service-4.webp", name: "TRANSMISION" },
-    { src: "/images/service-5.webp", name: "BATTERIES" },
-    { src: "/images/service-6.webp", name: "TUNE UP" },
-  ]
+  
 
 
   return (
@@ -112,30 +105,16 @@ export default function Home() {
           </div>
 
 
-          <div>
-            <div className='rounded-full bg-white shadow-lg'>
-              <Image
-                alt='how booking works at mechanic4u'
-                src='/images/how-it-works-4.webp'
-                height={250}
-                width={250}
-                placeholder='blur'
-                blurDataURL='/images/how-it-works-4.webp'
-              />
-            </div>
-            <h1 className='text-center font-Muli text-3xl p-4 text-gray-400'>4</h1>
-            <p className='text-center font-Muli'>PICK UP YOUR CAR<br />KEYS</p>
-          </div>
+      
 
         </div>
       </div>
       <div className='w-full'>
         <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
-          Our Pricing Plans
+          Our Packages
         </h1>
         <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
-        <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
-          Fixed price car servicing packages</p>
+        
       </div>
       <div className='flex sm:flex-row flex-col sm:justify-evenly justify-center items-center'>
         <Cards name="SUPRA" price="6499">
@@ -207,28 +186,7 @@ export default function Home() {
           </ul>
         </Cards>
       </div>
-      <div className='w-full'>
-        <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
-          Our Featured Services
-        </h1>
-        <div className='bg-[#1d72b2] relative left-[47%] w-[55px] h-[2px]'></div>
-        <p className='text-center font-Muli font-extralight py-10 text-[#3a3a3a]'>
-          We Offer Full Service & Maintenance</p>
-      </div>
-      <div className='sm:p-20 p-10 grid sm:grid-cols-4 grid-cols-2 gap-2'>
-        {
-          serviceGrid.map((service) => {
-            return (
-              <ServiceCell key={service.name} src={service.src} name={service.name} />
-
-            )
-          })
-        }
-
-
-
-
-      </div>
+      
       <div className='w-full'>
         <h1 className='text-center p-16 font-Muli text-4xl font-[1000] text-[#3A3A3A]'>
           We Provide Expert Services
@@ -239,11 +197,11 @@ export default function Home() {
       </div>
       <div className='flex sm:flex-row flex-col sm:p-20 p-10 sm:justify-evenly justify-center sm:space-x-10 items-center'>
         <ul className="parts font-Muli space-y-2 p-10">
-          <li>General Auto Maintenance</li>
+          <li>General Maintenance</li>
+          <li>Catalytic Converter Cleaning</li>
           <li>Computerized Scanning</li>
           <li>Manufacturer Recommended Service</li>
-          <li>Brake Service or Replacements</li>
-          <li>Catalytic Converter Cleaning</li>
+          <li>Brake Service/Brake pad Replacement</li>
         </ul>
         <div className=''>
           <Image

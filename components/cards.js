@@ -23,7 +23,7 @@ export default function Cards(props) {
                 </div>
 
                 <button onClick={()=>setShow(!show)} className='mt-5 mb-5 ml-20 px-20 py-4 bg-gradient-to-r from-[#004578] to-[#1d72b2] text-white font-Muli '>
-                    Order Now
+                    Book Now
                 </button>
             </div>
         </>
