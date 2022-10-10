@@ -15,6 +15,8 @@ export default function Modal(props) {
     const details = useRef();
     const kilometers = useRef();
     const service = useRef();
+    const location = useRef();
+    const zip = useRef();
 
     const handlesubmit = (event) => {
         event.preventDefault();
@@ -29,6 +31,8 @@ export default function Modal(props) {
             details: details.current.value,
             kilometeres: kilometers.current.value,
             service: service.current.value,
+            location: location.current.value,
+            zip: zip.current.value,
         }
 
         async function sendData(payload) {
@@ -47,10 +51,10 @@ export default function Modal(props) {
         return (
             <ReactPortal wrapperId="react-portal-modal-container">
 
-            <div className='sm:p-16 fixed  bg-transparent overflow-y-auto overflow-x-hidden top-0 right-0 left-0 z-[100] w-full md:inset-0 h-modal md:h-full'>
+            <div className='sm:p-10 fixed h-full bg-transparent overflow-y-auto overflow-x-hidden top-0 right-0 left-0 z-[100] w-full  h-modal md:h-full'>
                 <button onClick={() => props.setShow(!props.show)} className='absolute right-7 top-7 text-3xl z-50'>✖</button>
                 <div className=''>
-                    <div className="h-screen md:flex">
+                    <div className="h-full md:flex">
                         <div
                             className="relative overflow-hidden sm:p-0 p-10 sm:w-1/2 h-60 sm:h-auto w-full md:flex  bg-gradient-to-tr from-blue-900 to-blue-600 i justify-around items-center flex-col">
                             <div>
@@ -69,37 +73,37 @@ export default function Modal(props) {
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                                             First Name
                                         </label>
-                                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" />
+                                        <input ref={fname} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" />
                                     </div>
                                     <div className="w-full md:w-1/2 px-3">
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                                             Last Name
                                         </label>
-                                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" />
+                                        <input ref={lname} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" />
                                     </div>
                                     <div className="w-full md:w-1/2 px-3">
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                                             Phone Number
                                         </label>
-                                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" />
+                                        <input ref={phone} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" />
                                     </div>
                                     <div className="w-full md:w-1/2 px-3 py-2">
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                                             Email
                                         </label>
-                                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" />
+                                        <input ref={email} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" />
                                     </div>
                                     <div className="w-full md:w-1/2 px-3">
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                                             Date of appoinment
                                         </label>
-                                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="date" />
+                                        <input ref={date} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="date" />
                                     </div>
                                     <div className="w-full md:w-1/2 px-3 py-2">
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                                             Time of appoinment
                                         </label>
-                                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="time" />
+                                        <input ref={time} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="time" />
                                     </div>
                                 </div>
                                 <div className="flex flex-wrap -mx-3 mb-6">
@@ -107,7 +111,7 @@ export default function Modal(props) {
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                                             Vehicle Year, Make and Model
                                         </label>
-                                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" />
+                                        <input ref={details} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" />
                                     </div>
                                 </div>
                                 <div className="flex flex-wrap -mx-3 mb-2">
@@ -115,14 +119,14 @@ export default function Modal(props) {
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
                                             Current Kilometers
                                         </label>
-                                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="number" />
+                                        <input ref={kilometers} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="number" />
                                     </div>
                                     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
                                             Location
                                         </label>
                                         <div className="relative">
-                                            <select className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                            <select ref={location} className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
                                                 <option>Karachi</option>
                                                 <option>Lahore</option>
 
@@ -136,7 +140,7 @@ export default function Modal(props) {
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
                                             Zip
                                         </label>
-                                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210" />
+                                        <input ref={zip} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210" />
                                     </div>
                                 </div>
                                 <div className="flex flex-wrap -mx-3 mb-2">
@@ -144,7 +148,7 @@ export default function Modal(props) {
                                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                                             Service Required
                                         </label>
-                                        <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" />
+                                        <textarea ref={service} className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" />
 
                                     </div>
                                 </div>

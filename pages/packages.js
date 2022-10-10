@@ -35,7 +35,7 @@ export default function Packages() {
         />
 
       </div>
-      <div className='text-left sm:w-[620px] px-10 text-white relative sm:bottom-64 bottom-40 sm:left-32'>
+      <div className='text-left sm:w-[620px] px-10 text-white relative sm:bottom-64 bottom-[28rem] sm:left-32'>
         <h2 className='sm:py-5 font-Muli font-bold text-2xl sm:text-5xl'>Car Packages</h2>
         <p className=' sm:text-lg text-sm'>
           Our mechanics are mobile. Not only do we have significantly lower overhead costs compared to the local shops, but as a national brand, we are able to negotiate better prices from the auto parts vendors. We pass these savings to you! The bigger the job, the more you save.
@@ -57,7 +57,7 @@ export default function Packages() {
 
             <div className='flex sm:flex-row flex-col justify-center sm:items-end space-y-3 sm:space-x-5'>
               {/* <Cards name='Inspection Checkup' price="4000">
-                <div class="marquee">
+                <div className="marquee">
                   <div>
                     <p>Non EFI Cars <b>(Rs:4000)</b></p>
                     <p>EFI Cars <b>(Rs:5000)</b></p>
@@ -126,7 +126,7 @@ export default function Packages() {
               </Cards>
 
               <Cards name='PRO MAX' price='7999'>
-                <div class="marquee">
+                <div className="marquee">
                   <div>
                     <p>Hatchback Cars <b>(Rs:8000)</b></p>
                     <p>Sedan / Crossover Cars <b>(Rs:8500)</b></p>
@@ -167,9 +167,9 @@ export default function Packages() {
           <SwiperSlide>
 
             <div className='flex sm:flex-row sm:items-end flex-col justify-center space-y-3 sm:space-x-5'>
-              <Cards name='TURBO TUNING' price='4500'>
+              <Cards name='TURBO TUNING' price='4999'>
 
-                <div class="marquee">
+                <div className="marquee">
                   <div>
                     <p>600cc - 1000cc <b>(Rs:3000)</b></p>
                     <p>1300cc <b>(Rs:3500)</b></p>
@@ -177,7 +177,7 @@ export default function Packages() {
                     <p>2000cc - 3000cc <b>(Rs:4500)</b></p>
                   </div>
                 </div>
-                <ul class="parts  space-y-2 p-10">
+                <ul className="parts  space-y-2 p-10">
                   <li>Carburetor Settings</li>
                   <li>Tappets Adjustment</li>
                   <li>Engine Oil Replacement</li>
