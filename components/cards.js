@@ -12,7 +12,7 @@ export default function Cards(props) {
             <div className='shadow-lg w-96'>
 
                 <div className='flex h-48 bg-gradient-to-r from-[#004578] to-[#1d72b2] text-white font-Muli text-3xl p-10 '>
-                    <div className='text-right'>{props.name}<br /> package</div>
+                    <div className='text-right'>{props.name}<br /> Package</div>
                     <div className='bg-white mt-8 w-[70px] h-[2px] rotate-[70deg]'></div>
                     <div>{props.price}<br />onwards</div>
                 </div>

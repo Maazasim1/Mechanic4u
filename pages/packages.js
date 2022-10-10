@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import Footer from '../components/footer'
 import Lowerbar from '../components/lowerbar'
 import Upperbar from '../components/upperbar'
@@ -13,16 +13,16 @@ import Cards from '../components/cards'
 import Modal from '../components/modal'
 
 export default function Packages() {
-  const [show,setShow]=useState(false)
+  const [show, setShow] = useState(false)
   return (
 
     <div>
-      <Modal show={show} setShow={setShow}/>
+      <Modal show={show} setShow={setShow} />
 
       <Upperbar />
       <Lowerbar />
 
-      <div className="w-full sm:h-[350px] h-[200px] sm:overflow-hidden">
+      <div className="w-full sm:h-[350px] h-[500px!important] sm:overflow-hidden">
         <Image
           src="/images/package_header.webp"
           height={578}
@@ -31,7 +31,7 @@ export default function Packages() {
           placeholder="blur"
           blurDataURL="/images/package_header.webp"
           alt="packages banner"
-          className='object-cover'
+          className='object-center'
         />
 
       </div>
@@ -56,7 +56,7 @@ export default function Packages() {
           <SwiperSlide>
 
             <div className='flex sm:flex-row flex-col justify-center sm:items-end space-y-3 sm:space-x-5'>
-              <Cards name='Inspection Checkup' price="4000">
+              {/* <Cards name='Inspection Checkup' price="4000">
                 <div class="marquee">
                   <div>
                     <p>Non EFI Cars <b>(Rs:4000)</b></p>
@@ -79,19 +79,9 @@ export default function Packages() {
                 </ul>
 
               </Cards>
-              <Cards name="Brake Advance" price="3999">
-                <ul className="parts  space-y-2 p-10">
-                  <li>Caliper cleaning</li>
-                  <li>Brake Pads Service</li>
-                  <li>Brake Shoe Service</li>
-                  <li>Brake Cylinder Service</li>
-                  <li>Hand Brake Setting</li>
-                  <li>Drum &amp; Disc Polishing</li>
-                  <li>brake cylinderwashers/seals replacement</li>
-                  <li>Hub De Assembling</li>
-                </ul>
+                */}
 
-              </Cards>
+
               <Cards name='Hybrid Premium Tuning' price='6000'>
                 <ul className="parts  space-y-2 p-10">
                   <li>7 DAYS WORKMANSHIP WARRANTY</li>
@@ -112,14 +102,8 @@ export default function Packages() {
                   <li>Complete car inspection by DAE engineer through our inspection sheet</li>
                   <li>Pre &amp; Post inspection</li>
                 </ul>
-
               </Cards>
 
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-
-            <div className='flex sm:flex-row sm:items-end flex-col justify-center space-y-3 sm:space-x-5'>
               <Cards name='SUPRA' price='5999'>
                 <ul className="parts  space-y-2 p-10">
                   <li>Catalytic Cleaning by Machine</li>
@@ -140,6 +124,7 @@ export default function Packages() {
                 </ul>
 
               </Cards>
+
               <Cards name='PRO MAX' price='7999'>
                 <div class="marquee">
                   <div>
@@ -175,35 +160,45 @@ export default function Packages() {
 
               </Cards>
 
-
-            <Cards name='PRO MAX ' price='7999'>
-              <div class="marquee">
-                <div>
-                  <p>600cc - 1000cc <b>(Rs:3000)</b></p>
-                  <p>1300cc <b>(Rs:3500)</b></p>
-                  <p>1500cc - 1800cc <b>(Rs:4000)</b></p>
-                  <p>2000cc - 3000cc <b>(Rs:4500)</b></p>
-                </div>
-              </div>
-              <ul className="parts  space-y-2 p-10">
-                <li>Carburetor Settings</li>
-                <li>Tappets Adjustment</li>
-                <li>Engine Oil Replacement</li>
-                <li>Spark Plugs Servicing</li>
-                <li>Plugs wires cleaning/ replacement</li>
-                <li>TP Sensor Cleaning (EFI)</li>
-                <li>Throttle body cleaning (EFI)</li>
-                <li>Performance Inspection</li>
-                <li>Caliper Cleaning</li>
-                <li>Coolant change</li>
-                <li>Rust removing &amp; Greasing</li>
-                <li>Brake Pad/ Shoe Service</li>
-              </ul>
-
-            </Cards>
             </div>
           </SwiperSlide>
-          
+
+
+          <SwiperSlide>
+
+            <div className='flex sm:flex-row sm:items-end flex-col justify-center space-y-3 sm:space-x-5'>
+              <Cards name='TURBO TUNING' price='4500'>
+
+                <div class="marquee">
+                  <div>
+                    <p>600cc - 1000cc <b>(Rs:3000)</b></p>
+                    <p>1300cc <b>(Rs:3500)</b></p>
+                    <p>1500cc - 1800cc <b>(Rs:4000)</b></p>
+                    <p>2000cc - 3000cc <b>(Rs:4500)</b></p>
+                  </div>
+                </div>
+                <ul class="parts  space-y-2 p-10">
+                  <li>Carburetor Settings</li>
+                  <li>Tappets Adjustment</li>
+                  <li>Engine Oil Replacement</li>
+                  <li>Spark Plugs Servicing</li>
+                  <li>Plugs wires cleaning/ replacement</li>
+                  <li>TP Sensor Cleaning (EFI)</li>
+                  <li>Throttle body cleaning (EFI)</li>
+                  <li>Performance Inspection</li>
+                  <li>Caliper Cleaning</li>
+                  <li>Coolant change</li>
+                  <li>Rust removing &amp; Greasing</li>
+                  <li>Brake Pad/ Shoe Service</li>
+                </ul>
+              </Cards>
+
+
+
+
+            </div>
+          </SwiperSlide>
+
         </Swiper>
       </div>
       <div className='w-full'>
