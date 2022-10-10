@@ -22,7 +22,7 @@ export default function Packages() {
       <Upperbar />
       <Lowerbar />
 
-      <div className="w-full sm:h-[350px] h-[500px!important] sm:overflow-hidden">
+      <div className="w-full sm:h-[350px] h-[500px] sm:overflow-hidden">
         <Image
           src="/images/package_header.webp"
           height={578}
