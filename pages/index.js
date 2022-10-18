@@ -34,8 +34,10 @@ export default function Home() {
           </div>
           <div className='w-full'>
             <p className='text-lg text-[#3a3a3a]'>
-              Mechanic4u is a full-service preventive maintenance center. We perform high quality, guaranteed service you can trust at a fair price. We work on domestic and foreign vehicles and are your best choice for scheduled maintenance of your car, SUV, truck and fleet vehicles.
-            </p>
+            Mechanic4u.pk is a car care service company that brings the workshop on wheels to your doorstep because what we do is ART
+
+As one of the first door to door vehicle service enterprises,we effort to preserve a standard with greater skills and steadfast consumer care.We target to deliver our customers with the maximus user friendly automotive experience so that all your vehicle service n maintenance need are well taken care of without any disturbance.Our workshop on wheels brings consumers a variety of service including routine maintenance, catalytic converter cleaning, complete inspection, tunning, oil change and much more.
+             </p>
             <div className='py-5'>
               <div className='w-5 inline-block px-[2px] mx-2'>  <FontAwesomeIcon className='text-[1px] text-[#1d72b2]' icon={faCheck} /></div>Same day service is provided in many instances<br />
               <div className='w-5 inline-block px-[2px] mx-2'>  <FontAwesomeIcon className='text-[1px] text-[#1d72b2]' icon={faCheck} /></div>Our work is warrantied for a full year

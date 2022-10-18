@@ -21,6 +21,7 @@ export default function Modal(props) {
     const kilometers = useRef();
     const location = useRef();
 
+
     const handlesubmit = (event) => {
         event.preventDefault();
 
